@@ -6,7 +6,7 @@ It also logs joint movement metrics, and generates comprehensive Excel/CSV repor
 # Lightweight Version 
 
 Resolved the large file size issue required for running after cloning.
-All functionalities can now be executed directly via Python without the executable.Bit Controller.exe
+All functionalities can now be executed directly via Python without the executable.`Bit Controller.exe`
 
 A lightweight PyQt5 UI that uses a camera feed (MediaPipe Pose + your logic in `move_to_key_V10.py`) to map body movements to keystrokes and interact with a focused game window on Windows.
 
