@@ -1,13 +1,46 @@
-# MOTION2KEY_BitController
+# 🎮 MOTION2KEY_BitController
 This project turns camera-based human pose into real-time game controls. 
 
 It detects user actions via MediaPipe Pose enhanced with robust logic, and sends corresponding keystrokes to the foreground application—enabling full-body motion control for any game. The current version is fully compatible with BIT.TRIP RUNNER, a rhythm-based platformer.
 
 It also logs joint movement metrics, and generates comprehensive Excel/CSV reports along with a dashboard summary of the previous game level. The analysis includes Action Counts, Range of Motion (ROM) per joint, and Grouped Averages by Action Type.
 
+## 🚀 How to Run
+
+1. **Launch the application**  
+   Run:
+   ```
+   \MOTION2KEY_BitController\dist\Bit Controller.exe
+   ```
+   Wait until the **Bit Controller** interface appears.
+
+2. **Open your target game**  
+   Start the game you wish to control (e.g., *BIT.TRIP RUNNER*).
+
+3. **Snap game window**  
+   Click **“Snap Game”** in the Bit Controller UI.  
+   This will automatically position the game window in the appropriate location on the interface.  
+   You can re-click it anytime if you wish to readjust the alignment.
+
+4. **Start motion control**  
+   Click **“Start”** to activate the camera.  
+   The system will detect your body movements in real time and convert them into virtual key presses controlling the game.
+
+5. **Show supported actions (optional)**  
+   Click **“Show Hint”** to view the currently supported motion commands.
+
+   ![Hint](hint.jpg)
+
+6. **Stop and review**  
+   When your session is finished, click **“Stop”** to turn off the camera.  
+   A **Summary Dashboard** will be automatically generated, showing your motion performance metrics for the previous session.
+
+   ![Dashboard](Dashboard.jpg)
+
+---
 
 
-# Lightweight Version 
+## Lightweight Version 
 
 Resolved the large file size issue required for running after cloning.
 All functionalities can now be executed directly via Python without the executable.`Bit Controller.exe`
