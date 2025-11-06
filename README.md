@@ -25,7 +25,7 @@ For educational and research use under the **MOTION2KEY** project.
 1. **Launch the application**  
    Run:
    ```
-   \MOTION2KEY_BitController\dist\Bit Controller.exe
+   MOTION2KEY_BitController\dist\Bit Controller.exe
    ```
    Wait until the **Bit Controller** interface appears.
 
