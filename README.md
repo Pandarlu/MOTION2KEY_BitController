@@ -84,6 +84,11 @@ All functionalities can now be executed directly via Python without the executab
 
 This is a lightweight UI that uses a camera feed to map body movements to keystrokes and interact with a focused game window on Windows.
 
+Find:
+```
+MOTION2KEY_BitController\Lightweight
+```
+
 The repo contains only:
 
 ```
