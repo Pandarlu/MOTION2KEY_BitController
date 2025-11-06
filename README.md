@@ -40,7 +40,7 @@ It also logs joint movement metrics, and generates comprehensive Excel/CSV repor
 ---
 
 
-##🧩 Lightweight Version 
+## 🧩 Lightweight Version 
 
 Resolved the large file size issue required for running after cloning.
 All functionalities can now be executed directly via Python without the executable.`Bit Controller.exe`
@@ -96,7 +96,7 @@ You should now see `(.venv)` in your terminal prompt.
 
 ---
 
-## 3) Install Dependencies
+### 3) Install Dependencies
 
 Install the required packages into the **activated** virtual environment.
 
@@ -120,7 +120,7 @@ python -m pip install matplotlib pandas openpyxl
 
 ---
 
-## 4) Quick Self-Check
+### 4) Quick Self-Check
 
 Verify the environment and OpenCV install:
 
@@ -137,7 +137,7 @@ Make sure `Executable:` points to `...\your_project\.venv\Scripts\python.exe`.
 
 ---
 
-## 5) Run the UI
+### 5) Run the UI
 
 > **Windows / PowerShell**
 ```powershell
@@ -152,7 +152,7 @@ python ./UI.py
 
 ---
 
-## 6) What Each Button Does
+### 6) What Each Button Does
 
 - **Start**  
   Launches the controller thread (`start_controller(source="0")` in `move_to_key_V10.py`).  
@@ -175,7 +175,7 @@ python ./UI.py
 
 ---
 
-## 7) Folder Conventions & Outputs
+### 7) Folder Conventions & Outputs
 
 - **Data Recording/**  
   The UI will look for subfolders sorted by name (descending) to find the latest run and then load `summary_dashboard.png` after you press **Stop**.
@@ -193,9 +193,9 @@ python ./UI.py
 
 ---
 
-## 8) Typical Issues & Fixes
+### 8) Typical Issues & Fixes
 
-### “No module named 'cv2'”
+#### “No module named 'cv2'”
 You installed packages to a different interpreter. Always install with the **same** Python that runs your app:
 ```powershell
 # Inside the venv
@@ -206,35 +206,35 @@ where pip
 ```
 Prefer `python -m pip ...` to ensure pip targets the active interpreter.
 
-### Using the wrong Python in PowerShell
+#### Using the wrong Python in PowerShell
 Executable paths with spaces must be invoked with the **call operator** `&`:
 ```powershell
 & "C:\Users\<USER>\AppData\Local\Programs\Python\Python310\python.exe" -V
 ```
 
-### Qt plugin / display issues
+#### Qt plugin / display issues
 If you see errors about the “Qt platform plugin”, ensure PyQt5 installed cleanly:
 ```powershell
 python -m pip install --force-reinstall --no-cache-dir PyQt5
 ```
 
-### Snap/Recover not working
+#### Snap/Recover not working
 - These depend on Windows APIs; run the terminal/VS Code as **Administrator** if your system blocks window moves.
 - Ensure the external window is **restorable** (not minimized/hidden by anti-cheat overlays etc.).
 
-### MediaPipe compatibility
+#### MediaPipe compatibility
 We pin `mediapipe==0.10.14` which is stable on Python 3.10. If you upgrade Python, re-create the venv and reinstall.
 
 ---
 
-## 9) VS Code Tips (Optional)
+### 9) VS Code Tips (Optional)
 
 - **Select Interpreter**: `Ctrl+Shift+P` → “Python: Select Interpreter” → choose `.venv`.
 - **Integrated Terminal** starts in your project folder, so `python .\UI.py` just works.
 
 ---
 
-## 10) Requirements File (Optional)
+### 10) Requirements File (Optional)
 
 If you prefer a single install command later, create `requirements.txt`:
 
@@ -257,14 +257,14 @@ python -m pip install -r requirements.txt
 
 ---
 
-## 11) Notes for macOS/Linux Users
+### 11) Notes for macOS/Linux Users
 
 - Window snapping/repositioning depends on Windows APIs and is **not available** on macOS/Linux. The rest (camera, UI, start/stop, hint window, summary viewer) works if your `move_to_key_V10.py` does not require `pywin32`.
 - Replace camera source if needed (e.g., `source="0"` → `source="/dev/video0"`).
 
 ---
 
-## 12) Acknowledgements
+### 12) Acknowledgements
 
 - PyQt5 for UI
 - OpenCV for image handling
@@ -273,7 +273,7 @@ python -m pip install -r requirements.txt
 
 ---
 
-### Quickstart (TL;DR)
+#### Quickstart (TL;DR)
 
 ```powershell
 # In project folder
