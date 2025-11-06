@@ -5,6 +5,10 @@ It detects user actions via MediaPipe Pose enhanced with robust logic, and sends
 
 It also logs joint movement metrics, and generates comprehensive Excel/CSV reports along with a dashboard summary of the previous game level. The analysis includes Action Counts, Range of Motion (ROM) per joint, and Grouped Averages by Action Type.
 
+## 🧠 Credits
+Developed by [Zixuan Lu](https://github.com/Pandarlu)  
+For educational and research use under the **MOTION2KEY** project.
+
 ## 🚀 How to Run
 
 1. **Launch the application**  
