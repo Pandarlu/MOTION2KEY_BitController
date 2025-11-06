@@ -3,11 +3,20 @@ This project turns camera-based human pose into real-time game controls.
 
 It detects user actions via MediaPipe Pose enhanced with robust logic, and sends corresponding keystrokes to the foreground application—enabling full-body motion control for any game. The current version is fully compatible with BIT.TRIP RUNNER, a rhythm-based platformer.
 
-It also logs joint movement metrics, and generates comprehensive Excel/CSV reports along with a dashboard summary of the previous game level. The analysis includes Action Counts, Range of Motion (ROM) per joint, and Grouped Averages by Action Type.
+It also logs joint movement metrics, and generates comprehensive data reports along with a dashboard summary of the previous game level. The analysis includes Action Counts, Range of Motion (ROM) per joint, and Grouped Averages by Action Type.
 
-## 🧠 Credits
 Developed by [Zixuan Lu](https://github.com/Pandarlu)  
 For educational and research use under the **MOTION2KEY** project.
+
+## 💡 Features
+
+- **Camera-based motion detection** using MediaPipe Pose.  
+- **Real-time keystroke mapping** for game control.  
+- **Adjustable interface** with Snap Game functionality.  
+- **Action hint display** for supported gestures.  
+- **Automatic session summary dashboard** 
+
+---
 
 ## 🚀 How to Run
 
