@@ -8,6 +8,8 @@ It also logs joint movement metrics, and generates comprehensive data reports al
 Developed by [Zixuan Lu](https://github.com/Pandarlu)  
 For educational and research use under the **MOTION2KEY** project.
 
+---
+
 ## 💡 Features
 
 - **Camera-based motion detection** using MediaPipe Pose.  
