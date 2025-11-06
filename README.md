@@ -42,13 +42,12 @@ For educational and research use under the **MOTION2KEY** project.
    Click **“Start”** to activate the camera.  
    The system will detect your body movements in real time and convert them into virtual key presses controlling the game.
 
-5. **Show supported actions (optional)**  
+5. **Show supported actions**  
    Click **“Show Hint”** to view the currently supported motion commands.
 
    ![Hint](hint.jpg)
    
 6. **Recover**
-
    If the tracked external window went off-screen, repositions it back to the UI interface.
    
 7. **Stop and review**  
