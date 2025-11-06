@@ -40,7 +40,7 @@ It also logs joint movement metrics, and generates comprehensive Excel/CSV repor
 ---
 
 
-## Lightweight Version 
+##🧩 Lightweight Version 
 
 Resolved the large file size issue required for running after cloning.
 All functionalities can now be executed directly via Python without the executable.`Bit Controller.exe`
@@ -58,7 +58,7 @@ move_to_key_V10.py
 
 ---
 
-## 1) Prerequisites
+### 1) Prerequisites
 
 - **Python 3.10+** (3.10 recommended)
 - **Windows 10/11** (full features incl. window snapping via `pywin32`).  
@@ -69,7 +69,7 @@ Optional but recommended:
 
 ---
 
-## 2) Create a Virtual Environment
+### 2) Create a Virtual Environment
 
 > **Windows — PowerShell (recommended)**
 ```powershell
