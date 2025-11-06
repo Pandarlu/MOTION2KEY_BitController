@@ -10,7 +10,7 @@ A lightweight PyQt5 UI that uses a camera feed (MediaPipe Pose + your logic in `
 This repo contains only:
 
 ```
-UI.py
+UI_app.py
 move_to_key_V10.py
 ```
 
@@ -224,13 +224,7 @@ python -m pip install -r requirements.txt
 
 ---
 
-## 12) License
-
-Internal/research use. Adjust as needed for your project.
-
----
-
-## 13) Acknowledgements
+## 12) Acknowledgements
 
 - PyQt5 for UI
 - OpenCV for image handling
