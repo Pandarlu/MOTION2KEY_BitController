@@ -35,7 +35,7 @@ It also logs joint movement metrics, and generates comprehensive Excel/CSV repor
    When your session is finished, click **“Stop”** to turn off the camera.  
    A **Summary Dashboard** will be automatically generated, showing your motion performance metrics for the previous session.
 
-   ![Dashboard](Dashboard.jpg)
+   ![Dashboard](Dashboard.png)
 
 ---
 
