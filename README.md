@@ -79,8 +79,8 @@ If the tracked external window went off-screen, repositions it back to the UI in
 
 ## 🧩 Lightweight Version 
 
-Resolved the large file size issue required for running after cloning.
-All functionalities can now be executed directly via Python without the executable.`Bit Controller.exe`
+When large files required after cloning are missing or inaccessible due to the absence of Git LFS. 
+All functionalities can now be executed directly via Python without the executable`Bit Controller.exe`.
 
 This is a lightweight UI that uses a camera feed to map body movements to keystrokes and interact with a focused game window on Windows.
 
