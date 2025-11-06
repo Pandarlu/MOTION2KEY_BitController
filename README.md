@@ -48,6 +48,7 @@ For educational and research use under the **MOTION2KEY** project.
    ![Hint](hint.jpg)
    
 6. **Recover**
+
    If the tracked external window went off-screen, repositions it back to the UI interface.
    
 7. **Stop and review**  
