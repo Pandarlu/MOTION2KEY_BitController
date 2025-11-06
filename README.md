@@ -48,7 +48,7 @@ For educational and research use under the **MOTION2KEY** project.
    ![Hint](hint.jpg)
    
 6. **Recover**
-   If the tracked external window went off-screen, repositions it back to the UI interface.
+If the tracked external window went off-screen, repositions it back to the UI interface.
    
 7. **Stop and review**  
    When your session is finished, click **“Stop”** to turn off the camera.  
