@@ -31,6 +31,7 @@ For educational and research use under the **MOTION2KEY** project.
 
 2. **Open your target game**  
    Start the game you wish to control (e.g., *BIT.TRIP RUNNER*).
+   Bring your game window to the **foreground** (Alt-Tab)
 
 3. **Snap game window**  
    Click **“Snap Game”** in the Bit Controller UI.  
@@ -45,12 +46,33 @@ For educational and research use under the **MOTION2KEY** project.
    Click **“Show Hint”** to view the currently supported motion commands.
 
    ![Hint](hint.jpg)
-
-6. **Stop and review**  
+   
+6. **Recover**
+   If the tracked external window went off-screen, repositions it back to the UI interface.
+   
+7. **Stop and review**  
    When your session is finished, click **“Stop”** to turn off the camera.  
    A **Summary Dashboard** will be automatically generated, showing your motion performance metrics for the previous session.
 
    ![Dashboard](Dashboard.png)
+
+8. **Data Recording and Output**  
+   After each run, a folder named **`Data Recording`** will be automatically created in your working directory.  
+   Each session’s data will be saved in a subfolder named according to the real-time timestamp of that run.  
+   For example:
+
+   ```
+   MOTION2KEY_BitController\dist\Data Recording\20251107_120130
+   ```
+
+   This directory contains:
+
+   - 🧭 **Dashboard images** summarizing your motion performance  
+   - 🦵 **Real-time joint data** recorded throughout the session  
+   - 🔄 **Range of Motion (ROM)** for all tracked joints  
+   - 📊 **Average joint angles** at the moment each action was triggered  
+
+   These files allow you to review, analyze, or visualize your movement patterns after each gameplay session.
 
 ---
 
@@ -167,45 +189,7 @@ python ./UI.py
 
 ---
 
-### 6) What Each Button Does
-
-- **Start**  
-  Launches the controller thread (`start_controller(source="0")` in `move_to_key_V10.py`).  
-  - `source="0"` uses the default camera. If your camera index differs, adjust there.
-
-- **Stop**  
-  Stops the controller (`stop_controller()`), then tries to open the latest
-  `Data Recording/<NEWEST>/summary_dashboard.png` in a resizable dialog.
-
-- **Snap Game**  
-  Moves the **currently focused external window** to the right-hand placeholder (without resizing that window), adjusting the main window size if necessary.  
-  - Works on **Windows** (uses `win32gui`, `win32con`, `win32api`).
-  - Before clicking, bring your game window to the **foreground** (Alt-Tab), then click **Snap Game** in the UI.
-
-- **Recover**  
-  If the tracked external window went off-screen, repositions it back to `(100, 100)` (Windows only).
-
-- **Show Hint**  
-  Opens a resizable viewer for `hint.jpg` if present in the same folder as `UI.py`.
-
----
-
-### 7) Folder Conventions & Outputs
-
-- **Data Recording/**  
-  The UI will look for subfolders sorted by name (descending) to find the latest run and then load `summary_dashboard.png` after you press **Stop**.
-  ```
-  Data Recording/
-    2025-11-07_01-23-45/     <-- newest
-      summary_dashboard.png
-      ...
-    2025-11-06_23-10-12/
-      summary_dashboard.png
-  ```
-  
----
-
-### 8) Typical Issues & Fixes
+### 6) Typical Issues & Fixes
 
 #### “No module named 'cv2'”
 You installed packages to a different interpreter. Always install with the **same** Python that runs your app:
@@ -240,7 +224,7 @@ We pin `mediapipe==0.10.14` which is stable on Python 3.10. If you upgrade Pytho
 ---
 
 
-### 9) Notes for macOS/Linux Users
+### 7) Notes for macOS/Linux Users
 
 - Window snapping/repositioning depends on Windows APIs and is **not available** on macOS/Linux. The rest (camera, UI, start/stop, hint window, summary viewer) works if your `move_to_key_V10.py` does not require `pywin32`.
 - Replace camera source if needed (e.g., `source="0"` → `source="/dev/video0"`).
