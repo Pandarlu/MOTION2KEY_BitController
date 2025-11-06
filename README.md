@@ -187,10 +187,7 @@ python ./UI.py
     2025-11-06_23-10-12/
       summary_dashboard.png
   ```
-
-- **hint.jpg** (optional)  
-  Put an image named `hint.jpg` next to `UI.py` if you want **Show Hint** to work.
-
+  
 ---
 
 ### 8) Typical Issues & Fixes
@@ -264,7 +261,7 @@ python -m pip install -r requirements.txt
 
 ---
 
-### 12) Acknowledgements
+## Acknowledgements
 
 - PyQt5 for UI
 - OpenCV for image handling
@@ -273,13 +270,3 @@ python -m pip install -r requirements.txt
 
 ---
 
-#### Quickstart (TL;DR)
-
-```powershell
-# In project folder
-& "C:\Users\<USER>\AppData\Local\Programs\Python\Python310\python.exe" -m venv .venv
-.\.venv\Scripts\Activate.ps1
-python -m pip install --upgrade pip
-python -m pip install opencv-python numpy PyQt5 pywin32 mediapipe==0.10.14
-python ".\UI.py"
-```
