@@ -228,37 +228,8 @@ We pin `mediapipe==0.10.14` which is stable on Python 3.10. If you upgrade Pytho
 
 ---
 
-### 9) VS Code Tips (Optional)
 
-- **Select Interpreter**: `Ctrl+Shift+P` → “Python: Select Interpreter” → choose `.venv`.
-- **Integrated Terminal** starts in your project folder, so `python .\UI.py` just works.
-
----
-
-### 10) Requirements File (Optional)
-
-If you prefer a single install command later, create `requirements.txt`:
-
-```
-opencv-python
-numpy
-PyQt5
-pywin32; platform_system == "Windows"
-mediapipe==0.10.14
-# Optional:
-# matplotlib
-# pandas
-# openpyxl
-```
-
-Install with:
-```powershell
-python -m pip install -r requirements.txt
-```
-
----
-
-### 11) Notes for macOS/Linux Users
+### 9) Notes for macOS/Linux Users
 
 - Window snapping/repositioning depends on Windows APIs and is **not available** on macOS/Linux. The rest (camera, UI, start/stop, hint window, summary viewer) works if your `move_to_key_V10.py` does not require `pywin32`.
 - Replace camera source if needed (e.g., `source="0"` → `source="/dev/video0"`).
