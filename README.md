@@ -13,9 +13,9 @@ For educational and research use under the **MOTION2KEY** project.
 ## 💡 Features
 
 - **Camera-based motion detection** using MediaPipe Pose.  
-- **Real-time keystroke mapping** for game control.  
-- **Adjustable interface** with Snap Game functionality.  
-- **Action hint display** for supported gestures.  
+- **Real-time keystroke mapping** for any game control.  
+- **Visualized key mapping** dynamically displays triggered keys based on detected movements.
+- **Action hint display** for supported movements.  
 - **Automatic session summary dashboard** 
 
 ---
